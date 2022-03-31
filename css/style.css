@@ -1,0 +1,94 @@
+.navbar {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	z-index: 100;
+}
+#home-page {
+	height: 100vh;
+}
+.container {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.img {
+	-webkit-user-drag: none;
+}
+.section-title {
+	font-size: 2rem;
+	color: black;
+	border-bottom: 1px solid rgb(75, 75, 75);
+	text-align: center;
+	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1.5rem;
+}
+
+#contact, #project {
+	background-color: #EEEEEE;
+}
+#footer {
+	background-color: black;
+
+} 
+#footer .container {
+	padding-bottom: 1px;
+}
+.footer-links img {
+	width: 40px;
+	-webkit-user-drag: none;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 576px){
+	#navmenu {
+		padding-top: 5px;
+		font-size: 1rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* homepage text animation */
+/* Animation */
+@media screen and (min-width: 992px) {
+	@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+	h1 {
+	border-right: solid 3px red;
+	white-space: nowrap;
+	overflow: hidden;    
+	font-family: 'Source Code Pro', monospace;  
+	color: rgba(255,255,255,.70);
+	}
+
+	/* Animation */
+	h1 {
+	animation: animated-text 4s steps(29,end) 1s 1 normal both,
+					animated-cursor 700ms steps(29,end) infinite;
+	}
+
+	/* text animation */
+
+	@keyframes animated-text{
+	from{width: 0;}
+	to{width: 430px;}
+	}
+
+	/* cursor animations */
+
+	@keyframes animated-cursor{
+	from{border-right-color: red;}
+	to{border-right-color: transparent;}
+	}
+}
